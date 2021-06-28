@@ -50,7 +50,7 @@ Exemplos de chamadas da API
                }
            ]
        }
-   ]
+    ]
 
 ## Create a new Thing
 
