@@ -54,7 +54,7 @@ Exemplos de chamadas da API
        }
     ]
 
-## Create a new Thing
+## Criar um novo produto
 
 ### Request
 
@@ -98,7 +98,7 @@ Exemplos de chamadas da API
     ]
 }
 
-## Get a specific Thing
+## Obter um produto específico
 
 ### Request
 
