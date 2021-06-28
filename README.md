@@ -25,24 +25,24 @@ The REST API to the example app is described below.
 
 ### Request
 
-POST api/Products/
+`POST api/Products/`
 
-  curl --location --request POST 'https://localhost:44339/api/Products' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "name": "Pokebola",
-    "price": 1222,
-    "description": "Um belo produto",
-    "imageUrl": "https://gartic.com.br/imgs/mural/ca/carol4u/pokebola.png",
-    "tags": [
-        {
-            "name": "pokemon"
-        },
-        {
-            "name": "bola"
-        }
-    ]
-}
+        curl --location --request POST 'https://localhost:44339/api/Products' \
+      --header 'Content-Type: application/json' \
+      --data-raw '{
+          "name": "Pokebola",
+          "price": 1222,
+          "description": "Um belo produto",
+          "imageUrl": "https://gartic.com.br/imgs/mural/ca/carol4u/pokebola.png",
+          "tags": [
+              {
+                  "name": "pokemon"
+              },
+              {
+                  "name": "bola"
+              }
+          ]
+      }'
 
 ### Response
 
