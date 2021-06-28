@@ -96,7 +96,7 @@ Exemplos de chamadas da API
             "name": "bola"
         }
     ]
-}
+      }
 
 ## Obter um produto específico
 
