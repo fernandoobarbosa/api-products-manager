@@ -19,7 +19,38 @@ The REST API to the example app is described below.
 
 ### Response
 
-   List of products
+   [
+    {
+        "id": "60d9c58851794d90f0f1d75a",
+        "name": "MasterBall",
+        "price": 12344,
+        "description": "Master!",
+        "imageUrl": "https://smallimg.pngkey.com/png/small/156-1564817_master-ball-master-ball-pokemon-icon.png",
+        "tags": [
+            {
+                "name": "Master"
+            },
+            {
+                "name": "Bola"
+            }
+        ]
+    },
+    {
+        "id": "60d9faf4327e63346711b2d8",
+        "name": "Pokebola",
+        "price": 1222,
+        "description": "Um belo produto",
+        "imageUrl": "https://gartic.com.br/imgs/mural/ca/carol4u/pokebola.png",
+        "tags": [
+            {
+                "name": "pokemon"
+            },
+            {
+                "name": "bola"
+            }
+        ]
+    }
+]
 
 ## Create a new Thing
 
