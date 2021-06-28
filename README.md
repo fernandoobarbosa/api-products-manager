@@ -25,7 +25,7 @@ The REST API to the example app is described below.
 
 ### Request
 
-`POST api/Products/`
+`POST api/Products/
 
     curl --location --request POST 'https://localhost:44339/api/Products' 
 --header 'Content-Type: application/json' \
@@ -38,7 +38,7 @@ The REST API to the example app is described below.
         {"name":"pokemon"},
         {"name":"bola"}
     ]
-}'
+}`
 
 ### Response
 
