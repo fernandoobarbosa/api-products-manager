@@ -1,5 +1,9 @@
 # Api de Produtos
 
+O cliente desta aplicação está no repositório : <br />
+ https://github.com/fernandoobarbosa/cliente-products-manager <br /> 
+assim como sua documentação
+
 ## Requisitos 
 
     * Visual Studio 2019 16.8 ou posterior com a carga de trabalho ASP.NET desenvolvimento para a Web
