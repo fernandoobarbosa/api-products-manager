@@ -201,8 +201,9 @@ Exemplos de chamadas da API
 
 ### Response
 
- [![Generic badge](https://img.shields.io/badge/204-No Content-<COLOR>.svg)](https://shields.io/)
-
+   [![Generic badge](https://img.shields.io/badge/201-No-Content-<COLOR>.svg)](https://shields.io/)
+ 
+ 
 ## Create another new Thing
 
 ### Request
