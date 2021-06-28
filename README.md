@@ -27,7 +27,7 @@ The REST API to the example app is described below.
 
 `POST api/Products/`
 
-    curl --location --request POST 'https://localhost:44339/api/Products' \
+    curl --location --request POST 'https://localhost:44339/api/Products' 
 --header 'Content-Type: application/json' \
 --data-raw '{
     "name":"Pokebola",
