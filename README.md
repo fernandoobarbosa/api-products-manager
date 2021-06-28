@@ -152,20 +152,30 @@ Exemplos de chamadas da API
 
 ### Request
 
-`GET /thing/id`
+`GET /api/Products/id`
 
-    curl -i -H 'Accept: application/json' http://localhost:7000/thing/1
+    curl --location --request GET 'https://localhost:44339/api/Products/60da31e86319b657a23cd152' \
+    --header 'Content-Type: application/json'
 
 ### Response
 
-    HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:30 GMT
-    Status: 200 OK
-    Connection: close
-    Content-Type: application/json
-    Content-Length: 36
+[![Generic badge](https://img.shields.io/badge/200-Ok-<COLOR>.svg)](https://shields.io/)
 
-    {"id":1,"name":"Foo","status":"new"}
+        {
+        "id": "60da31e86319b657a23cd152",
+        "name": "Pokebola",
+        "price": 1222,
+        "description": "Um belo produto",
+        "imageUrl": "https://gartic.com.br/imgs/mural/ca/carol4u/pokebola.png",
+        "tags": [
+            {
+                "name": "pokemon"
+            },
+            {
+                "name": "bola"
+            }
+        ]
+    }
 
 ## Get a non-existent Thing
 
