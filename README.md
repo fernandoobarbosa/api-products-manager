@@ -102,6 +102,52 @@ Exemplos de chamadas da API
     ]
       }
 
+
+## Criar 10.000 produtos
+
+### Request
+
+`POST api/Products/CreateBatch`
+
+        curl --location --request POST 'https://localhost:44339/api/Products/CreateBatch' \
+      --header 'Content-Type: application/json' \
+      --data-raw '{
+          "name": "Pokebola",
+          "price": 1222,
+          "description": "Um belo produto",
+          "imageUrl": "https://gartic.com.br/imgs/mural/ca/carol4u/pokebola.png",
+          "tags": [
+              {
+                  "name": "pokemon"
+              },
+              {
+                  "name": "bola"
+              }
+          ]
+      }'
+
+### Response
+
+[![Generic badge](https://img.shields.io/badge/201-Created-<COLOR>.svg)](https://shields.io/)
+
+
+    {
+    "id": "60d9faf4327e63346711b2d8",
+    "name": "Pokebola",
+    "price": 1222,
+    "description": "Um belo produto",
+    "imageUrl": "https://gartic.com.br/imgs/mural/ca/carol4u/pokebola.png",
+    "tags": [
+        {
+            "name": "pokemon"
+        },
+        {
+            "name": "bola"
+        }
+    ]
+      }
+      
+      
 ## Obter um produto específico
 
 ### Request
