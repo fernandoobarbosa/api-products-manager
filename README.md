@@ -19,6 +19,8 @@ Exemplos de chamadas da API
 
 ### Response
 
+[![Generic badge](https://img.shields.io/badge/200-Ok-<COLOR>.svg)](https://shields.io/)
+
       [
        {
            "id": "60d9c58851794d90f0f1d75a",
