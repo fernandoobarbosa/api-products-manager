@@ -177,24 +177,31 @@ Exemplos de chamadas da API
         ]
     }
 
-## Get a non-existent Thing
-
+## Atualizar as informações de um produto
 ### Request
 
-`GET /thing/id`
+`PUT api/Products/id`
 
-    curl -i -H 'Accept: application/json' http://localhost:7000/thing/9999
+    curl --location --request PUT 'https://localhost:44339/api/Products/60da31e86319b657a23cd152' \
+    --header 'Content-Type: application/json' \
+    --data-raw '{
+        "name": "Pokebola Nova",
+        "price": 1222,
+        "description": "Um belo produto novo",
+        "imageUrl": "https://gartic.com.br/imgs/mural/ca/carol4u/pokebola.png",
+        "tags": [
+            {
+                "name": "pokemon novo"
+            },
+            {
+                "name": "bola novo"
+            }
+        ]
+    }'
 
 ### Response
 
-    HTTP/1.1 404 Not Found
-    Date: Thu, 24 Feb 2011 12:36:30 GMT
-    Status: 404 Not Found
-    Connection: close
-    Content-Type: application/json
-    Content-Length: 35
-
-    {"status":404,"reason":"Not found"}
+ [![Generic badge](https://img.shields.io/badge/204-No Content-<COLOR>.svg)](https://shields.io/)
 
 ## Create another new Thing
 
