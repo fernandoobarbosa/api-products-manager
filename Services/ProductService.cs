@@ -35,6 +35,11 @@ namespace Api.Services
             return product;
         }
 
+        public void CreateBatch(List<Product> batch)
+        {
+            _products.InsertMany(batch);
+        }
+
         public void Update(string id, Product productIn) =>
             _products.ReplaceOne(product => product.Id == id, productIn);
 

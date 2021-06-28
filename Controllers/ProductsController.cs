@@ -1,6 +1,7 @@
 ﻿using Api.Models;
 using Api.Services;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Bson;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -52,10 +53,40 @@ namespace Api.Controllers
             return CreatedAtRoute("GetProduct", new { id = product.Id.ToString() }, product);
         }
 
+        [HttpPost("CreateBatch")]
+        public ActionResult<Product> CreateBatch(Product product)
+        {
+            if (product.Tags.Count < 2)
+            {
+                return BadRequest("Need almost 2 tags");
+            }
+
+            List<Product> batch = new List<Product>();
+            product.Id = ObjectId.GenerateNewId().ToString();
+
+            for (int i = 1; i <= 10000; i++)
+            {
+                var batchProduct = new Product()
+                {
+                    Name = product.Name,
+                    Id = ObjectId.GenerateNewId().ToString(),
+                    Description = product.Description,
+                    Price = product.Price,
+                    Tags = product.Tags,
+                    ImageUrl = product.ImageUrl,
+                };
+                batch.Add(batchProduct);
+            }
+
+            _productService.CreateBatch(batch);
+            return CreatedAtRoute("GetProduct", new { id = product.Id.ToString() }, product);
+        }
+
         [HttpPut("{id:length(24)}")]
         public IActionResult Update(string id, Product productIn)
         {
             var product = _productService.Get(id);
+            productIn.Id = id;
 
             if (product == null)
             {
