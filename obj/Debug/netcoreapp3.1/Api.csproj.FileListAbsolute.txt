@@ -32,3 +32,8 @@ C:\Users\Fernando Barbosa\source\repos\ProdutosApi\ProdutosApi\obj\Debug\netcore
 C:\Users\Fernando Barbosa\source\repos\ProdutosApi\ProdutosApi\obj\Debug\netcoreapp3.1\Api.dll
 C:\Users\Fernando Barbosa\source\repos\ProdutosApi\ProdutosApi\obj\Debug\netcoreapp3.1\Api.pdb
 C:\Users\Fernando Barbosa\source\repos\ProdutosApi\ProdutosApi\obj\Debug\netcoreapp3.1\Api.genruntimeconfig.cache
+C:\Users\Fernando Barbosa\source\repos\ProdutosApi\ProdutosApi\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Fernando Barbosa\source\repos\ProdutosApi\ProdutosApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Fernando Barbosa\source\repos\ProdutosApi\ProdutosApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Fernando Barbosa\source\repos\ProdutosApi\ProdutosApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Fernando Barbosa\source\repos\ProdutosApi\ProdutosApi\obj\Debug\netcoreapp3.1\Api.MvcApplicationPartsAssemblyInfo.cs
